@@ -1,0 +1,292 @@
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #b5737a;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 80px;
+  background-color: #b5737a;
+  color: #fff;
+  border-bottom: 1.25px solid rgba(255,255,255,0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.nav-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-links span {
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 53px;
+}
+
+.sidebar {
+  width: 33.33%;
+  padding: 35px 80px;
+  position: fixed;
+  top: 53px;
+  left: 0;
+  height: calc(100vh - 53px);
+  border-right: 1.25px solid rgba(255,255,255,0.3);
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.sidebar-name {
+  font-size: 3.1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.sidebar-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #f8c8c8;
+}
+
+.headshot {
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+  border: 1.25px solid rgba(255,255,255,0.3);
+}
+
+.sidebar-info {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.sidebar-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.sidebar-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1.25px solid rgba(255,255,255,0.8);
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.85rem;
+  transition: background 0.2s;
+}
+
+.sidebar-btn:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.content {
+  width: 66.67%;
+  padding: 40px 80px;
+  overflow-y: auto;
+  height: calc(100vh - 53px);
+  margin-left: 33.33%;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section h2 {
+  font-size: 2rem;
+  font-weight: 650;
+  margin-bottom: 20px;
+  color: #f8c8c8;
+}
+
+.section p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 16px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-card {
+  border: 1.25px solid rgba(255,255,255,0.3);
+  padding: 24px;
+}
+
+.project-header {
+  margin-bottom: 12px;
+}
+
+.project-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.project-award {
+  font-size: 0.8rem;
+  color: #f8c8c8;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.project-tags span {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border: 1px solid rgba(255,255,255,0.4);
+  color: #fff;
+}
+
+.project-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.project-links a {
+  font-size: 0.85rem;
+  color: #f8c8c8;
+  text-decoration: none;
+  border-bottom: 1px solid #f8c8c8;
+}
+
+.project-links a:hover {
+  opacity: 0.7;
+}
+
+.experience-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.experience-card {
+  border: 1.25px solid rgba(255,255,255,0.3);
+  padding: 24px;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.experience-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.experience-role {
+  font-size: 0.9rem;
+  color: #f8c8c8;
+  font-weight: 500;
+}
+
+.experience-date {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.6);
+  white-space: nowrap;
+  margin-left: 16px;
+}
+
+.experience-bullets {
+  padding-left: 18px;
+}
+
+.experience-bullets li {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 6px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border: 1.25px solid rgba(255,255,255,0.3);
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.contact-item span:first-child {
+  font-weight: 600;
+  color: #f8c8c8;
+}
+
+.contact-item:hover {
+  background: rgba(255,255,255,0.1);
+}
