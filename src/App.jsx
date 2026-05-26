@@ -98,6 +98,19 @@ function App() {
       </div>
     </div>
 
+    <div className="project-card">
+  <div className="project-header">
+    <h3>Orange County GHG Emissions Dashboard</h3>
+  </div>
+  <p>Built an interactive Tableau dashboard processing and spatially filtering 6,780+ records across 10 sectors and 111 named facilities in Orange County to visualize GHG emission trends, facility-level accountability, and sector breakdowns from 2021 to 2025.</p>
+  <div className="project-tags">
+    <span>Tableau</span><span>Data Visualization</span><span>Geospatial Analysis</span><span>EDA</span><span>Environmental Data</span>
+  </div>
+  <div className="project-links">
+    <a href="https://public.tableau.com/app/profile/kavya.desai7780/viz/OrangeCountyCAUSACO2Emissions2021-2025/Dashboard1" target="_blank">Tableau Dashboard</a>
+  </div>
+</div>
+
   </div>
 </div>
 
