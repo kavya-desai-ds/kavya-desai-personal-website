@@ -52,9 +52,34 @@ const projects = [
       <a href="https://public.tableau.com/app/profile/kavya.desai7780/viz/OrangeCountyCAUSACO2Emissions2021-2025/Dashboard1" target="_blank" rel="noopener noreferrer">Tableau Dashboard</a>
     </div>
   </div>,
+  <div className="project-card" key="bruinquest">
+    <div className="project-header">
+      <h3>BruinQuest: Student Itinerary App for LA</h3>
+    </div>
+    <p>Led a 6-person team at The Data Science Union building a full-stack, student-focused itinerary app for LA. It aggregates data from Google Maps, Yelp, and LA Metro APIs to generate constraint-based outings tailored to student budgets, schedules, and transit preferences, using a greedy nearest-neighbor algorithm to build itineraries and Claude Haiku for RAG-based narrative generation.</p>
+    <div className="project-tags">
+      <span>React</span><span>RAG</span><span>Claude Haiku</span><span>Google Maps API</span><span>Yelp API</span>
+    </div>
+  </div>,
 ]
 
 const experience = [
+  <div className="experience-card" key="monaco">
+    <div className="experience-header">
+      <div>
+        <h3>Monaco</h3>
+        <span className="experience-role">Data Science Intern</span>
+      </div>
+      <span className="experience-date">June 2026 – September 2026</span>
+    </div>
+    <ul className="experience-bullets">
+      <li>Built a self-service bounce analytics dashboard covering 300K+ emails across 400+ customer accounts, cutting email bounce investigation time from several hours to under 2 minutes; traced bounced addresses to their original data sources with SQL and agentically automated daily refreshes with freshness and quality checks.</li>
+      <li>Delivered 200+ ad hoc SQL analyses across a 500M+ row vendor dataset and a multi-billion-row Databricks warehouse, reconstructing record creation and modification histories from event logs to resolve customer-escalated data-quality disputes.</li>
+      <li>Developed a Claude-powered data-quality agent using custom Claude Skills and SQL query workflows to identify stale records, duplicate company/person records, and fraudulent profiles across 400+ customer accounts, generating data health metrics and actionable cleanup lists for proactive remediation.</li>
+      <li>Developed an entity-resolution method for company records using employee-record overlap and Wilson lower-bound confidence intervals to rank 12,000+ candidate company pairs by match confidence; enabled automated merging of these records through a resumable, idempotent production API pipeline, reserving only low-confidence matches for manual review.</li>
+      <li>Created a duplicate-person classifier using regex-derived features and profile activity signals from a 500M-profile dataset to distinguish active LinkedIn profiles from stale, redirected, or duplicate records; achieved 96% accuracy on testing data.</li>
+    </ul>
+  </div>,
   <div className="experience-card" key="e1">
     <div className="experience-header">
       <div>
@@ -73,7 +98,7 @@ const experience = [
         <h3>UCLA DataRes</h3>
         <span className="experience-role">Project Lead</span>
       </div>
-      <span className="experience-date">October 2025 – Present</span>
+      <span className="experience-date">October 2025 – June 2026</span>
     </div>
     <ul className="experience-bullets">
       <li>Led and supported teams of 3–4 on investigative data journalism projects by creating structured project outlines and timelines, overseeing data preparation and visualization, and producing and presenting final deliverables.</li>
